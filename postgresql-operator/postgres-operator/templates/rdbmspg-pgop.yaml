@@ -93,7 +93,7 @@ spec:
       pgaudit.log_connections: "off"
       pgaudit.log_directory: "/var/log/postgresql"
       pgaudit.log_disconnections: "off"
-      pgaudit.log_filename: "pg-{{ postgresql_version }}-{{ postgresql_patroni_cluster_name }}.log"
+      pgaudit.log_filename: "postgresql.log"
       pgaudit.log_level: "log"
       pgaudit.log_parameter: "on"
       pgaudit.log_relation: "on"
