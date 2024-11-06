@@ -32,7 +32,7 @@ spec:
     parameters:
       archive_timeout: "1800s"
       autovacuum: "on"
-      autovacuum_analyze_scale_factor: 0."01"
+      autovacuum_analyze_scale_factor: "0.01"
       autovacuum_naptime: "1s"
       autovacuum_vacuum_cost_delay: "2"
       autovacuum_vacuum_cost_limit: "1000"
@@ -120,8 +120,8 @@ spec:
       wal_receiver_status_interval: "10s"
       work_mem: "32MB"
 
-  tolerations:
-  - key: "dedicated"
-    operator: "Equal"
-    value: "storage"
-    effect: "NoSchedule"
+  # tolerations:
+  # - key: "dedicated"
+  #   operator: "Equal"
+  #   value: "storage"
+  #   effect: "NoSchedule"
