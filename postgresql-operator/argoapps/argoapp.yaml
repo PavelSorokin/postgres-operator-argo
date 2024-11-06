@@ -10,8 +10,8 @@ spec:
   project: postgres-operator
   source:
     path: postgresql-operator/argoapps/
-    repoURL: https://git.ecom.tech/ecom/cicd/ecomtech/helm-infra.git
-    targetRevision: INFR-33637-postgres-operator
+    repoURL: https://github.com/PavelSorokin/postgres-operator-argo
+    targetRevision: main
   syncPolicy:
     automated:
       selfHeal: true
