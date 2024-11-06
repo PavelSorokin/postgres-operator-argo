@@ -427,7 +427,6 @@ configTeamsApi:
     log_statement: all
   # URL of the Teams API service
   # teams_api_url: http://fake-teams-api.default.svc.cluster.local
-  docker pull harbor-p01.samokat.io/global-external/registry.opensource.zalan.do/acid/pgbouncer@sha256:e842e2a717ceb1f7a7edcb021c98fc4b5882a8615e2dfacdca781a17abc90c47
 # configure connection pooler deployment created by the operator
 configConnectionPooler:
   # db schema to install lookup function into
