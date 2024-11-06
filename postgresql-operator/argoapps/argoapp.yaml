@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: postgres-operator
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: postgres-operator
+  source:
+    path: postgresql-operator/argoapps/
+    repoURL: https://git.ecom.tech/ecom/cicd/ecomtech/helm-infra.git
+    targetRevision: INFR-33637-postgres-operator
+  syncPolicy:
+    automated:
+      selfHeal: true
