@@ -112,7 +112,6 @@ spec:
       track_counts: "on"
       track_functions: "all"
       track_io_timing: "on"
-      unix_socket_directories: "{{ postgresql_unix_socket_dir }}"
       wal_buffers: "32MB"
       wal_compression: "lz4"
       wal_keep_size: "1024"
