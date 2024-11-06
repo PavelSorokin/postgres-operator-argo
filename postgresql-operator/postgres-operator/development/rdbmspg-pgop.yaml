@@ -121,8 +121,8 @@ spec:
       wal_receiver_status_interval: "10s"
       work_mem: "32MB"
 
-  tolerations:
-  - key: "dedicated"
-    operator: "Equal"
-    value: "storage"
-    effect: "NoSchedule"
+  # tolerations:
+  # - key: "dedicated"
+  #   operator: "Equal"
+  #   value: "storage"
+  #   effect: "NoSchedule"
