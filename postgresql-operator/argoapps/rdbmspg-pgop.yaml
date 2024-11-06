@@ -9,10 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    helm:
-      valueFiles:
-        - values.yaml
-    path: postgresql-operator/clusters
+    path: postgresql-operator/postgres-operator/development
     repoURL: https://github.com/PavelSorokin/postgres-operator-argo
     targetRevision: main
   syncPolicy:
